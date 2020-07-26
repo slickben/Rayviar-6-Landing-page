@@ -15,10 +15,11 @@
 
     <!-- google font  -->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light " id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <svg width="173" height="68" viewBox="0 0 373 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,25 +37,25 @@
                         <a class="nav-link text-dark font-weight-normal" href="#"> HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#"> ABOUT </a>
+                        <a class="nav-link text-dark" href="#about"> ABOUT </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">SERVICES</a>
+                        <a class="nav-link text-dark" href="#customer">SERVICES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">WORK</a>
+                        <a class="nav-link text-dark" href="#top-product">WORK</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">TEAM</a>
+                        <a class="nav-link text-dark" href="#team">TEAM</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">CLIENT</a>
+                        <a class="nav-link text-dark" href="#CLIENT">CLIENT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">CONTACT</a>
+                        <a class="nav-link text-dark" href="#contact">CONTACT</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="signin_anchor" href="./login.html">
+                        <a class="signin_anchor" href="#">
                             <button class="nav-link btn btn-navbar btn-block"> SIGN IN </button>
                         </a>
                     </li>
@@ -63,8 +64,8 @@
         </div>
     </nav>
     <!-- Navbar -->
-    <header class="header-bg-img">
-        <div class="container py-5">
+    <header  class="header-bg-img pt-5">
+        <div data-aos="fade-down" style="margin-top: 5rem;" class="container py-5">
             <p class="header-p pt-5 h5 font-weight-bold px-1">All Natural</p>
             <h1 class="display-4 font-weight-bold">
                 Celebrate 
@@ -93,10 +94,10 @@
     <!-- Back to Top Button -->
     
     <main>
-        <section class="py-5 top-product">
+        <section id="top-product"class="py-5 top-product">
             <h2 class="text-center font-weight-bold py-5">Top Beauty Products</h2>
             <div class="row container mx-auto">
-                <div class="col-xl-4 col-lg-4 col-md-6">
+                <div data-aos="fade-up-right" data-aos-duration="3000" class="col-xl-4 col-lg-4 col-md-6">
                     <h5 class=" font-weight-bold mx-4">Skin care body lotion For </h5>
                     <h5 class=" font-weight-bold mx-4">Women</h5>
                     <div class="card border-0">
@@ -113,7 +114,7 @@
                         </div>                       
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
+                <div data-aos="fade-down-left" data-aos-duration="2000" class="col-xl-4 col-lg-4 col-md-6">
                     <h5 class=" font-weight-bold mx-4">Best Facial and Hand wash </h5>
                     <h5 class=" font-weight-bold mx-4"> Creams</h5>
                     <div class="card border-0">
@@ -130,7 +131,7 @@
                         </div>                       
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mt-md-6 offset-md-3 offset-lg-0">
+                <div data-aos="fade-down-left" data-aos-duration="4000" class="col-xl-4 col-lg-4 col-md-6 mt-md-6 offset-md-3 offset-lg-0">
                     <h5 class=" font-weight-bold mx-4">Smooth Hands lotion For </h5>
                     <h5 class=" font-weight-bold mx-4">Women</h5>
                     <div class="card border-0">
@@ -149,10 +150,12 @@
                 </div>
             </div>
         </section>
-        <section> 
+        <section id="about"> 
             <div style="max-width: 1440px;" class="row py-5 mx-auto">
                 <div id="about-us" class="col-xl-6 col-lg-6 col-md-12">
-                    <img src="./images/Vector 4.png" class="img-fluid" alt="Responsive image">
+                    <img data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" src="./images/Vector 4.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 d-flex align-items-center">
                     <div>
@@ -177,7 +180,7 @@
                 <h3 id="head-1" class=" text-center text-white py-5">Products</h3>
                 <h1 id="head-2" class=" text-center text-white py-3  pb-5 font-weight-bold">Editors Pick</h1>
                 <div class="row container mx-auto">
-                    <div class="col-xl-4 col-lg-4 col-md-6 py-3">
+                    <div data-aos="fade-up-right" data-aos-duration="3000" class="col-xl-4 col-lg-4 col-md-6 py-3">
                         <h5 class=" font-weight-bold mx-4 text-white">Skin care body lotion For </h5>
                         <h5 class=" font-weight-bold mx-4 text-white">Women</h5>
                         <div class="card border-0 bg-transparent">
@@ -195,7 +198,7 @@
                             </div>                       
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 py-3">
+                    <div data-aos="zoom-out-up" data-aos-duration="2000" class="col-xl-4 col-lg-4 col-md-6 py-3">
                         <h5 class=" font-weight-bold mx-4 text-white">Best Facial and Hand wash </h5>
                         <h5 class=" font-weight-bold mx-4 text-white"> Creams</h5>
                         <div class="card border-0 bg-transparent">
@@ -215,7 +218,7 @@
                             </div>                       
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mt-md-6 offset-md-3 offset-lg-0 py-3">
+                    <div data-aos="fade-down-left" data-aos-duration="4000" class="col-xl-4 col-lg-4 col-md-6 mt-md-6 offset-md-3 offset-lg-0 py-3">
                         <h5 class=" font-weight-bold mx-4 text-white">Smooth Hands lotion For </h5>
                         <h5 class=" font-weight-bold mx-4 text-white">Women</h5>
                         <div class="card border-0 bg-transparent">
@@ -246,12 +249,12 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="customer">
             <div class="container py-5">
                 <h4 id="head-1" class="py-5 brand-color font-weight-bold  text-center">FEEDBACK </h4>
                 <h1 id="head-2" class="py-3 pb-5 font-weight-bold  text-center">Costumers Review</h1>
                 <div class="row container mx-auto py-5">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div data-aos="fade-right" data-aos-duration="3000" class="col-xl-4 col-lg-4 col-md-6">
                         
                         <div class="card border-0 py-5 opacity-3">
                             <img class="card-img-top w-50 mx-auto rounded-circle" src="./images/Ellipse 10.jpg" alt="Card image cap">
@@ -265,7 +268,7 @@
                                                
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div data-aos="fade-down" data-aos-duration="1000" class="col-xl-4 col-lg-4 col-md-6">
                         
                         <div class="card border-0 scale shadow-lg py-5">
                             <img class="card-img-top w-50 mx-auto rounded-circle" src="./images/Ellipse9.png" alt="Card image cap">
@@ -279,7 +282,7 @@
                                                
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div data-aos="fade-left" data-aos-duration="3000" class="col-xl-4 col-lg-4 col-md-6">
                         
                         <div class="card border-0 py-5 opacity-3">
                             <img class="card-img-top w-50 mx-auto rounded-circle" src="./images/Ellipse 16.png" alt="Card image cap">
@@ -306,7 +309,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="team">
             <div class="container py-5">
                 <h4 id="head-1" class="py-5 brand-color font-weight-bold text-center">FEEDBACK </h4>
                 <h1 id="head-2" class="py-3 pb-3 font-weight-bold text-center">Costumers Review</h1>
@@ -314,7 +317,8 @@
                     <div class="col-xl-5 col-lg-6 col-md-6">
                         
                         <div class="card border-0 py-5 ">
-                            <img class="card-img-top" src="./images/Rectangle 29.png" alt="Card image cap">
+                            <img data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom" data-aos-duration="500" class="card-img-top" src="./images/Rectangle 29.png" alt="Card image cap">
                             <div class="card-body px-0 mx-0">
                                 <h3 class="py-2 font-weight-bold">Night Routines</h3>
                             </div> 
@@ -338,7 +342,8 @@
                     <div class="col-xl-5 offset-xl-2 offset-lg-0 offset-md-0  col-lg-6 col-md-6">
                         
                         <div class="card border-0  py-5">
-                            <img class="card-img-top " style="max-height: 377px;" src="./images/Rectangle 30.png" >
+                            <img data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000" class="card-img-top " style="max-height: 377px;" src="./images/Rectangle 30.png" >
                             <div class="card-body px-0 mx-0">
                                 <h3 class="py-2 font-weight-bold">Night Routines</h3>
                             </div> 
@@ -389,7 +394,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="CLIENT">
             <div class="py-5">
                 <h4 id="head-1" class="container mx-auto font-weight-bold pt-5 text-center brand-color">OUR BLOG</h4>
                 <h1 id="head-2" class="container mx-auto font-weight-bold py-5 text-center">Latest News</h1>
@@ -397,7 +402,8 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 py-4">
                         
                         <div class="card border-0 position-relative">
-                            <img class="card-img-top" src="./images/Rectangle 47.png" alt="Card image cap">
+                            <img data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000" class="card-img-top" src="./images/Rectangle 47.png" alt="Card image cap">
                             <p class="position-absolute h3 text-white">
                                 <span style=" background-color: red;" class="py-2 px-4 d-block my-0">29</span>
                                 <span style="font-size: .9rem; background-color: #192C52;" class="py-1 px-4 d-block">june</span>
@@ -420,7 +426,8 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 py-4">
                         
                         <div class="card border-0 position-relative">
-                            <img class="card-img-top" src="./images/Rectangle 164.png" alt="Card image cap">
+                            <img data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" class="card-img-top" src="./images/Rectangle 164.png" alt="Card image cap">
                             <p class="position-absolute h3 text-white">
                                 <span style=" background-color: red;" class="py-2 px-4 d-block my-0">29</span>
                                 <span style="font-size: .9rem; background-color: #192C52;" class="py-1 px-4 d-block">june</span>
@@ -442,7 +449,8 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 mt-md-6 offset-md-3 offset-lg-0 py-4">
                         
                         <div class="card border-0 position-relative">
-                            <img class="card-img-top" src="./images/Rectangle 167.png" alt="Card image cap">
+                            <img data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000" class="card-img-top" src="./images/Rectangle 167.png" alt="Card image cap">
                             <p class="position-absolute h3 text-white">
                                 <span style=" background-color: red;" class="py-2 px-4 d-block my-0">29</span>
                                 <span style="font-size: .9rem; background-color: #192C52;" class="py-1 px-4 d-block">june</span>
@@ -468,7 +476,7 @@
                 </div>   
             </div>
         </section>
-        <section>
+        <section id="contact">
             <div class="py-5 brand-color-bg">
                 <div class="py-5 d-flex flex-column align-items-center justify-content-center">
                     <p class="h5 text-center text-white mb-5">Subscribe to our newsletter for latest updates</p>
@@ -515,5 +523,9 @@
     <script src="./assets/jquery/jquery-3.5.1.min.js"></script>
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="./assets/popper/popper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
