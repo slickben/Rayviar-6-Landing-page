@@ -282,6 +282,37 @@
     width: 1130px;
     border: 1px solid rgb(214, 214, 214);
   }
+
+  .glide__slide--active {
+    position: relative
+  }
+
+  .glide__slide--active .card {
+    /* transform: scale(1.1); */
+
+    opacity:1!important;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .glide__bullet  {
+    border: none;
+    background-color: transparent;
+    color: #C4C4C4;
+    font-size: 20px;
+  }
+
+  .glide__bullet:focus {
+    outline: none;
+  }
+
+  .glide__bullet--active {
+    font-size: 25px;
+    color: #192C52;
+  }
+
+
   
   
   
